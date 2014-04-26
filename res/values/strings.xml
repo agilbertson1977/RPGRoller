@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="attack_roll">Roll an Attack</string>
     <string name="skill_roll">Roll a Skill</string>
+    <string name="title_Attack_Roll">Attack Roll</string>
 
 </resources>
