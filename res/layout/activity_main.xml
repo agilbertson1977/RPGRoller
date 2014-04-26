@@ -26,4 +26,13 @@
         android:layout_marginTop="18dp"
         android:text="@string/attack_roll" />
 
+    <Button
+        android:id="@+id/skill_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/attack_button"
+        android:layout_below="@+id/attack_button"
+        android:layout_marginTop="38dp"
+        android:text="@string/skill_roll" />
+
 </RelativeLayout>
