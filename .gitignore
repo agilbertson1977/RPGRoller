@@ -1,0 +1,5 @@
+# Ignore Eclipse generated "bin" and "gen" files
+*.class
+bin/*
+gen/*
+.?*.swp
