@@ -7,5 +7,6 @@
     <string name="attack_roll">Roll an Attack</string>
     <string name="skill_roll">Roll a Skill</string>
     <string name="title_Attack_Roll">Attack Roll</string>
+    <string name="spell_roll">Roll a spell</string>
 
 </resources>

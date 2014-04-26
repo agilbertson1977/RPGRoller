@@ -32,7 +32,16 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/attack_button"
         android:layout_below="@+id/attack_button"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="16dp"
         android:text="@string/skill_roll" />
+
+    <Button
+        android:id="@+id/spell_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/skill_button"
+        android:layout_below="@+id/skill_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/spell_roll" />
 
 </RelativeLayout>

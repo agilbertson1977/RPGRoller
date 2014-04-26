@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.rpgroller.AttackRollAction"
+            android:label="@string/title_Attack_Roll" >
+        </activity>
+        
     </application>
 
 </manifest>
