@@ -4,5 +4,6 @@
     <string name="app_name">RPGRoller</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="attack_roll">Roll an Attack</string>
 
 </resources>
