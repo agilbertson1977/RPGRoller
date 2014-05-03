@@ -8,6 +8,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+
+// http://www.androidhive.info/2011/11/android-sqlite-database-tutorial/
+
+
 public class MainActivity extends Activity {
 	
 	Button attackButton;
