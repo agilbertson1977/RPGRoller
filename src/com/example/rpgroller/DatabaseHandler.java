@@ -149,6 +149,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	}
 	
 	public void deleteWeapon(Weapon weapon) {
+		SQLiteDatabase db = this.getWritableDatabase();
+		db.delete(TABLE_WEAPONS, KEY_ID + " = ?", new String[] {String.valueOf(weapon.getId())});
 	}
 	
 	
