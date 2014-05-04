@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 	Button attackButton;
 	Button skillButton;
 	Button spellButton;
+	DatabaseHandler db;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		
+		db = new DatabaseHandler(this.getApplicationContext());
 	}
 
 	@Override
