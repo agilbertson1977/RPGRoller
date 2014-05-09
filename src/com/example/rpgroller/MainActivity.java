@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 	Button attackButton;
 	Button skillButton;
 	Button spellButton;
+	
 	DatabaseHandler db;
 
 	@Override
@@ -26,9 +27,10 @@ public class MainActivity extends Activity {
 		attackButton = (Button) findViewById(R.id.attack_button);
 		skillButton = (Button) findViewById(R.id.skill_button);
 		spellButton = (Button) findViewById(R.id.spell_button);
+		
 		attackButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, AttackRollAction.class);
+				Intent intent = new Intent(MainActivity.this, BasicInfoAction.class);
 				startActivity(intent);
 			}
 		});

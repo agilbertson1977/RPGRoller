@@ -7,7 +7,26 @@
     <string name="attack_roll">Roll an Attack</string>
     <string name="skill_roll">Roll a Skill</string>
     <string name="title_Attack_Roll">Attack Roll</string>
+    <string name="title_Basic_Info">Basic Character Information</string>
     <string name="spell_roll">Roll a spell</string>
     <string name="roll_attack_text">Roll Attack</string>
+    <string name="character_level_text">Character Level</string>
+    <string name="character_class_text">Character Class</string>
+	<string name="character_weapon_text">Character Weapon</string>
+	<string name="continue_text">Continue</string>
+	<string name="add_weapon">Add New Weapon</string>
 
+    <string-array name="player_classes">
+        <item>Barbarian</item>
+		<item>Bard</item>
+		<item>Cleric</item>
+		<item>Druid</item>
+		<item>Fighter</item>
+		<item>Monk</item>
+		<item>Paladin</item>
+		<item>Ranger</item>
+		<item>Rogue</item>
+		<item>Sorcerer</item>
+		<item>Wizard</item>                                
+    </string-array>
 </resources>

@@ -26,6 +26,10 @@
             android:name="com.example.rpgroller.AttackRollAction"
             android:label="@string/title_Attack_Roll" >
         </activity>
+                <activity
+            android:name="com.example.rpgroller.BasicInfoAction"
+            android:label="@string/title_Basic_Info" >
+        </activity>
         
     </application>
 

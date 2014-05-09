@@ -35,17 +35,17 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	
 	@Override
 	public void onCreate(SQLiteDatabase db){
-		String CREATE_WEAPONS_TABLE = "CREATE TABLE" + TABLE_WEAPONS
-				+ KEY_ID + "INTEGER PRIMARY KEY"
-				+ KEY_WEP_NAME + "TEXT"
-				+ KEY_ATK_BONUS +"INTEGER"
-				+ KEY_DIE_NUM + "INTEGER"
-				+ KEY_DIE_TYPE + "INTEGER"
-				+ KEY_DMG_BONUS + "INTEGER"
-				+ KEY_CRIT_LOW  + "INTEGER"
-				+ KEY_CRIT_HIGH	+  "INTEGER"
-				+ KEY_CRIT_MULTI + "INTEGER"
-				+ KEY_NOTES + "TEXT";
+		String CREATE_WEAPONS_TABLE = "CREATE TABLE " + TABLE_WEAPONS + " ( "
+				+ KEY_ID + " INTEGER PRIMARY KEY, "
+				+ KEY_WEP_NAME + " TEXT, "
+				+ KEY_ATK_BONUS +" INTEGER, "
+				+ KEY_DIE_NUM + " INTEGER, "
+				+ KEY_DIE_TYPE + " INTEGER, "
+				+ KEY_DMG_BONUS + " INTEGER, "
+				+ KEY_CRIT_LOW  + " INTEGER, "
+				+ KEY_CRIT_HIGH	+  " INTEGER, "
+				+ KEY_CRIT_MULTI + " INTEGER, "
+				+ KEY_NOTES + " TEXT )";
 		
 		db.execSQL(CREATE_WEAPONS_TABLE);
 	}
@@ -119,6 +119,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 						Integer.parseInt(cursor.getString(8)),
 						cursor.getString(9));
 				weapons.add(weapon);
+			} while (cursor.moveToNext());
+		}
+		return weapons;
+	}
+	
+	public List<String> getAllWeaponNames() {
+		ArrayList<String> weapons = new ArrayList<String>();
+		String selectQuery = "SELECT * FROM " + TABLE_WEAPONS;
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db.rawQuery(selectQuery, null);
+		if(cursor.moveToFirst()) {
+			do {
+				weapons.add(cursor.getString(2));				
 			} while (cursor.moveToNext());
 		}
 		return weapons;

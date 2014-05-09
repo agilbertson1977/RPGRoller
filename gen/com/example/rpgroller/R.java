@@ -8,6 +8,9 @@
 package com.example.rpgroller;
 
 public final class R {
+    public static final class array {
+        public static final int player_classes=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -24,18 +27,43 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f09000c;
+        public static final int addWeaponButton=0x7f090006;
+        public static final int attack_button=0x7f090009;
+        public static final int button1=0x7f090000;
+        public static final int continueButton=0x7f090005;
+        public static final int pcClassSpinner=0x7f090008;
+        public static final int pcClassText=0x7f090002;
+        public static final int pcLevel=0x7f090003;
+        public static final int pcLevelText=0x7f090001;
+        public static final int pcWeaponSpinner=0x7f090007;
+        public static final int pcWeaponText=0x7f090004;
+        public static final int skill_button=0x7f09000a;
+        public static final int spell_button=0x7f09000b;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_attackroll=0x7f030000;
+        public static final int activity_basicinfo=0x7f030001;
+        public static final int activity_main=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int add_weapon=0x7f05000d;
         public static final int app_name=0x7f050000;
+        public static final int attack_roll=0x7f050003;
+        public static final int character_class_text=0x7f05000a;
+        public static final int character_level_text=0x7f050009;
+        public static final int character_weapon_text=0x7f05000b;
+        public static final int continue_text=0x7f05000c;
         public static final int hello_world=0x7f050002;
+        public static final int roll_attack_text=0x7f050008;
+        public static final int skill_roll=0x7f050004;
+        public static final int spell_roll=0x7f050007;
+        public static final int title_Attack_Roll=0x7f050005;
+        public static final int title_Basic_Info=0x7f050006;
     }
     public static final class style {
         /** 
@@ -59,10 +87,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
